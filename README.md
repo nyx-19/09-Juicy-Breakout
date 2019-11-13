@@ -1,1 +1,3 @@
 # 09-Juicy-Breakout
+
+This breakout game has been spruced up by adding in an aesthetic theme of western-like target game. There has been a great amount of scene setting, a change in assets like the spring and targets. Sound effects for interactions with different elements were added as well as music. There are two end screens with their own music and design for winning and losing. Finally, there is a tween effect for the beginning of the game bring the targets down onto the set. A few effects I wanted to add but was unable to do successfully after some trial and error were adding particles for collisions with targets and screen shaking.
