@@ -1,0 +1,123 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Assets/background2.png" type="Texture" id=1]
+[ext_resource path="res://Assets/OstrichSansInline-Regular.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://lose.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/cactus3.png" type="Texture" id=4]
+[ext_resource path="res://Assets/cactus1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/bushOrange4.png" type="Texture" id=6]
+[ext_resource path="res://Assets/bushOrange3.png" type="Texture" id=7]
+[ext_resource path="res://Assets/bush3.png" type="Texture" id=8]
+[ext_resource path="res://Assets/cloud1.png" type="Texture" id=9]
+[ext_resource path="res://Assets/cloud2.png" type="Texture" id=10]
+[ext_resource path="res://Assets/bush2.png" type="Texture" id=11]
+[ext_resource path="res://Assets/bushOrange1.png" type="Texture" id=12]
+[ext_resource path="res://Assets/treeDead.png" type="Texture" id=13]
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+font_data = ExtResource( 2 )
+
+[node name="Game Over" type="Node"]
+
+[node name="background2" type="Sprite" parent="."]
+position = Vector2( 515.651, 301.376 )
+scale = Vector2( 1.28975, 1.25135 )
+texture = ExtResource( 1 )
+
+[node name="message" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="message"]
+margin_left = 337.075
+margin_top = 239.102
+margin_right = 734.075
+margin_bottom = 370.102
+color = Color( 0, 0, 0, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="message"]
+margin_left = 350.0
+margin_top = 250.0
+margin_right = 720.0
+margin_bottom = 360.0
+
+[node name="ColorRect3" type="ColorRect" parent="message"]
+margin_left = 355.0
+margin_top = 254.0
+margin_right = 713.0
+margin_bottom = 356.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="message"]
+margin_left = 395.446
+margin_top = 240.337
+margin_right = 667.446
+margin_bottom = 337.337
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.764706, 0.243137, 0.243137, 1 )
+text = "GAME OVER!"
+align = 1
+
+[node name="lose" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
+
+[node name="cactus3" type="Sprite" parent="."]
+position = Vector2( 987.802, 427.726 )
+scale = Vector2( 1.266, 2.70572 )
+texture = ExtResource( 4 )
+
+[node name="cactus2" type="Sprite" parent="."]
+position = Vector2( 244.901, 484.251 )
+scale = Vector2( 1.266, 1.84143 )
+texture = ExtResource( 5 )
+
+[node name="bushOrange5" type="Sprite" parent="."]
+position = Vector2( 387.401, 573.076 )
+scale = Vector2( 1.266, 1.84143 )
+texture = ExtResource( 6 )
+
+[node name="bushOrange3" type="Sprite" parent="."]
+position = Vector2( 161.301, 578.301 )
+texture = ExtResource( 7 )
+
+[node name="bush3" type="Sprite" parent="."]
+position = Vector2( 662.902, 566.901 )
+scale = Vector2( 1.35849, 1.41023 )
+texture = ExtResource( 8 )
+
+[node name="cactus1" type="Sprite" parent="."]
+position = Vector2( 727.502, 536.976 )
+scale = Vector2( 0.744947, 0.99332 )
+texture = ExtResource( 5 )
+
+[node name="cloud1" type="Sprite" parent="."]
+position = Vector2( 794.002, 83.3504 )
+texture = ExtResource( 9 )
+
+[node name="cloud2" type="Sprite" parent="."]
+position = Vector2( 118.551, 225.851 )
+texture = ExtResource( 10 )
+
+[node name="bushOrange4" type="Sprite" parent="."]
+position = Vector2( 965.002, 557.401 )
+scale = Vector2( 1.40714, 1.95 )
+texture = ExtResource( 7 )
+
+[node name="bush2" type="Sprite" parent="."]
+position = Vector2( 433.951, 573.076 )
+scale = Vector2( 1.35849, 1.41023 )
+texture = ExtResource( 11 )
+
+[node name="bushOrange1" type="Sprite" parent="."]
+position = Vector2( 821.552, 572.601 )
+texture = ExtResource( 12 )
+
+[node name="treeDead" type="Sprite" parent="."]
+position = Vector2( 57.7506, 474.276 )
+scale = Vector2( 0.944767, 1.45 )
+texture = ExtResource( 13 )
+
+[node name="treeDead2" type="Sprite" parent="."]
+position = Vector2( 541.301, 534.601 )
+scale = Vector2( 0.624418, 0.56923 )
+texture = ExtResource( 13 )

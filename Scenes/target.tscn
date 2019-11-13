@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/target.gd" type="Script" id=1]
+[ext_resource path="res://Assets/target_colored.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 65.1234
+
+[node name="target" type="StaticBody2D" groups=[
+"Targets",
+]]
+position = Vector2( 180, 217.611 )
+scale = Vector2( 0.506645, 0.489657 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
